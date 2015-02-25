@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>The Awesome Number Guessing Game</title>
+  <link href = "css/style.css" type = "text/css" rel = "stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>The Awesome Number Guessing Game</h1>
+  </header>
+  <div id = "rules">
+    <h2>The Rules of the Game</h2>
+    <p>
+      You only have a certian amount of guessing to guess the correct number.  To make your guesses count you will be told if the number is higher or lower than the number that you guessed.  After each succesful round you have a chance to unlock achievements.  See if you can unlock them all.
+    </p>
+    <ul>
+      <li><strong>Easy</strong> - 5 guesses to pick a number between 1 & 10</li>
+      <li><strong>Medium</strong> - 8 guesses to pick a number between 1 & 100</li>
+      <li><strong>Hard</strong> - 10 guesses to pick a number between 1 & 1,000</li>
+    </ul>
+
+  </div>
+  <div id = "game">
+    <label class = "startMenu">Please Enter your name: <input id = "userName" placeholder = "NAME" type = "text"></input></label>
+    <button class = "gameButton startMenu" id = "startButton">Let the Games Begin!!!</button>
+    <h2 class = "levels">Hi <span class="yourName">User</span>, please select your Level</h2>
+    <button class = "gameButton levels" id = "easyButton">Easy</button>
+    <button class = "gameButton levels" id = "mediumButton">Medium</button>
+    <button class = "gameButton levels" id = "hardButton">Hard</button>
+
+    <label class = "guessMenu">Enter your guess between 1 - <span id = "topRange">10</span>: <input id = "userGuess" placeholder = "???" type = "text"></input></label>
+    <button class = "gameButton guessMenu" id = "guessButton">GUESS!</button>
+    <div class = "guessMenu" id = "totalGuesses">You have <span id = "numbOfGuesses">0</span> guesses left.</div>
+    <div class = "guessMenu" id = "lastGuess">Look <span class = "yourName">User</span>, this is your last guess.  You have to get this one right.</div>
+
+    <div class = "guessMenu" id = "higher">
+      <img src = "images/UpArrow.jpg"/>
+      <img src = "images/UpArrow.jpg"/>
+      Higher!!
+      <img src = "images/UpArrow.jpg"/>
+      <img src = "images/UpArrow.jpg"/>
+    </div>
+
+    <div class = "guessMenu" id = "lower">
+      <img src = "images/DownArrow.jpg"/>
+      <img src = "images/DownArrow.jpg"/>
+      Lower!!
+      <img src = "images/DownArrow.jpg"/>
+      <img src = "images/DownArrow.jpg"/>
+    </div>
+    <div class = "endGame" id = "correct">
+      <img src = "images/star.jpg"/>
+      Congratulations!!
+      <img src = "images/star.jpg"/><br>
+    </div>
+    <div class = "endGame" id = "wrong">
+      Sorry you did not guess the answer correctly.<br>
+    </div>
+    <div class = "endGame">
+      <span id = "correctAnswer">0</span> was the correct answer.
+      <br>
+      <button class = "gameButton endGame" id = "resetButton">Try Again?</button>
+    </div>
+  </div>
+  <div id = "achievements">
+    <h2>Achievements</h2>
+    <div id = "firstWinAch">First Win</div>
+    <div id = "firstGuessAch">Won on First Guess</div>
+    <div id = "lastGuessAch">Won on Last Guess</div>
+    <div id = "allLevelsAch">Won on Easy, Medium & Hard</div>
+    <div id = "Row5Ach">5 in a row</div>
+
+  </div>
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/number.js"></script>
+</body>
+</html>

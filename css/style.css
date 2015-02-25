@@ -1,0 +1,130 @@
+* {
+  font-family: Arial;
+  /*border: 1px solid pink;*/
+}
+
+body {
+  background: #424242;
+  color: #FFEFD5;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  width: 33%;
+  float: left;
+}
+
+div h2 {
+  text-align: center;
+}
+
+#rules li:nth-child(1) {
+  color: #58FA58;
+}
+
+#rules li:nth-child(2) {
+  color: #F4FA58;
+}
+
+#rules li:nth-child(3) {
+  color: #FA5858;
+}
+
+#rules li:nth-child(4) {
+  color: #610B0B;
+}
+
+#game {
+  /*color: #424242;*/
+  padding-top: 20px;
+  text-align: center;
+}
+
+.gameButton {
+  color: #424242;
+  font-size: larger;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+#startButton {
+  background-color: #A9F5F2;
+  width: 100%;
+}
+#easyButton {
+  background-color: #58FA58;
+}
+#mediumButton {
+  background-color: #F4FA58;
+}
+#hardButton {
+  background-color: #FA5858;
+}
+#insaneButton {
+  background-color: #610B0B;
+  color: #FFFFFF;
+}
+
+#user {
+  border-radius: 5px;
+  width: 50%;
+}
+
+#guess {
+  font-size: larger;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+}
+
+div.guessMenu {
+  height: 3em;
+  width: 100%;
+  vertical-align: middle;
+  font-size: larger;
+}
+
+div.endGame {
+  height: 3em;
+  width: 100%;
+  vertical-align: middle;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#achievements {
+  padding: 0 5% 0 5%;
+  width: 23%;
+}
+
+#achievements div {
+  text-align: center;
+  float: none;
+  width: 90%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  opacity: 0.10;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: blue;
+}
+
+#achievements .secretAch {
+  background-color: #BDBDBD;
+  color: #000000;
+}
+
+.guessMenu img {
+  height: 2em;
+}
+
+.endGame img {
+  height: 2em;
+}
+
