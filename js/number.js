@@ -111,6 +111,7 @@ var User = function() {
 
       $(prevJTag).after(message);
       $(jTag).fadeTo("slow",1.0);
+      this.gotInsane = true;
     }
   };
 }
